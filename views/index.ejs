@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        heloooooooooooooooo
+        <% degemonArray.forEach(val=>{%>
+
+        <h3><%=val.name%></h3>
+        <img src="<%=val.img%>" alt="">
+        <h3><%=val.level%></h3>
+
+        <form action="/add" method="get">
+
+            <input type="text" name="name" value="<%=val.name%> ">
+            <input type="text" name="img" value="<%val.img%> ">
+            <input type="text" name="level" value="<%val.level%> ">
+            <input type="submit" value="add to favarute">
+        </form>
+    </div>
+    <%})%>
+</body>
+
+</html>
